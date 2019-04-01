@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Alef:400,700|Nunito:300,400,700');
+
+@include font-face('futura', '/fonts/futuhv-webfont');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+// img {
+// 	max-width: 100%;
+// 	height: auto;
+// }
+
+html {
+	height: 100%;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+body {
+	background: url('../images/bg-mandala.png') no-repeat 17% 0%, $background;
+	font: 300 16px/24px $nunito;
+	line-height: normal;
+}
+
+.yoga-container {
+	max-width: 950px;
+	min-width: 1366px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	padding-top: 150px;
+}
+
+.benefits {
+	font-size: 90px;
+	font-family: $futura;
+	line-height: 95px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #FFF;
+	height: 143px;
+	width: 763px;
+	position: relative;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	&__title {
+	  background-color: #565656;
+	  width: 930px;
+	  color: transparent;
+	  text-shadow: 0px 1px 3px rgba(223,189,181,1);
+	  -webkit-background-clip: text;
+	     -moz-background-clip: text;
+	          background-clip: text;
+		position: absolute;
+	    top: -52px;
+	    left: 97px;
+	}
+}
