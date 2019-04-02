@@ -4,7 +4,7 @@
 
 .gallery-section {
 	overflow: hidden;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	position: relative;
 
 	&:hover &__text {
@@ -15,13 +15,6 @@
 		opacity: 0;
 	}
 
-	&:hover &__title--mod-d {
-		opacity: 0;
-	}
-
-	&:hover &__title--mod-rot {
-		opacity: 0;
-	}
 	
 
 	&__img {
@@ -34,28 +27,33 @@
 		}
 
 	}
-	
+
 
 	&__title {
 		font-size: 20px;
 		color: $add;
 		position: absolute;
+		background: linear-gradient(to bottom, rgba(107,88,88,1) 1%,rgba(193,158,158,1) 48%,rgba(79,64,64,1) 100%);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}
+
+	&__title--pos-t {
 		top: 15px;
-		left: 53px;
+		left: 53px;	
 	}
 
 	&__title--mod-d {
-		font-size: 20px;
-		color: $add;
-		position: absolute;
 		bottom: 15px;
 		right: 53px;
 	}
 
+	&__title--mod-l {
+		bottom: 15px;
+		left: 53px;
+	}
+
 	&__title--mod-rot {
-		font-size: 20px;
-		color: $add;
-		position: absolute;
 	    bottom: 100px;
 	    left: -60px;
 	    transform: rotate(-90deg);
