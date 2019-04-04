@@ -75,3 +75,18 @@ body {
 	    left: 97px;
 	}
 }
+
+.dectorator-container {
+	padding-top: 190px;
+	padding-bottom: 50px;
+	position: relative;
+	
+	&:before {
+		@include pos($t:0);
+		width: 2px;
+		height: 100px;
+		content: '';
+		background: $mainText;
+		left: 50%;
+	}
+}

@@ -1,0 +1,85 @@
+.classes {
+	background: #FFF;
+	padding: 122px 0 30px;
+	position: relative;
+	overflow: hidden;
+	
+	.row {
+		position: relative;
+	}
+
+	&__decorator {
+		font-weight: 300;
+		font-size: 31px;
+		writing-mode: vertical-rl;
+		position: relative;
+		height: 174px;
+		top: -65px;
+		
+		&:after {
+			@include pos($r:0);
+			content: '';
+			width: 2px;
+			height: 118px;
+			background: $mainText;
+			right: 21px;
+    		bottom: -140px;
+			
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__wrapper--mod {
+		margin-right: -86px;
+		
+	}
+
+	&__wrapper--mod2 {
+		justify-content: flex-end;
+		margin-left: -35px;
+	}
+	
+	&__title {
+		color: $add;
+		font-weight: 300;
+		font-size: 26px;
+		padding-bottom: 10px;
+	}
+
+	&__desc {
+    	position: relative;
+    	z-index: 1;
+    	
+	}
+
+}
+
+.row--mod {
+	margin-top: -50px;
+}
+
+.row--indent {
+	padding-bottom: 70px;
+}
+
+.block-decorator {
+	font-family: $futura;
+	font-size: 100px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: rgba(232, 197, 188, 0.3);
+}
+
+.block-decorator--pos-r {
+	@include pos($r:-135px, $t: 135px);
+}
+
+.block-decorator--pos-l {
+	font-size: 80px;
+	@include pos($l:-135px, $t: 135px);
+}
