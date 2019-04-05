@@ -14,7 +14,6 @@
 		writing-mode: vertical-rl;
 		position: relative;
 		height: 174px;
-		top: -65px;
 		
 		&:after {
 			@include pos($r:0);
@@ -26,6 +25,14 @@
     		bottom: -140px;
 			
 		}
+	}
+
+	&__decorator--pos {
+		top: -65px;
+	}
+
+	&__decorator--pos-teach {
+		top: -25px;
 	}
 
 	&__wrapper {
