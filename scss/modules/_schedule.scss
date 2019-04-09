@@ -1,0 +1,35 @@
+.schedule {
+	padding-top: 35px;
+	background: url('../images/mandala.png') no-repeat top center;
+	
+	&__row {
+		margin-bottom: 82px;
+	}
+
+	&__week-day {
+		padding-bottom: 30px;
+		font-size: 20px;
+		position: relative;
+		
+		&:before {
+			@include pos($l:-60px, $t:12px);
+			content: '';
+			width: 40px;
+			height: 2px;
+			background: $mainText;
+		}
+	}
+
+	&__classes {
+		border-right: 1px solid $button;
+		font-size: 18px;
+	}
+
+	&__classes:not(:last-child), &__event:not(:last-child) {
+		padding-bottom: 30px;
+		
+	}
+	
+
+
+}
