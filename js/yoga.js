@@ -14,7 +14,7 @@ function sliderLeft() {
 		sliderBox.style.left = position + 'px';
 	}
 	if (position === -2130) {
-		position = 1065;
+		position = -1065;
 		sliderBox.style.left = position + 'px';
 	}
 
