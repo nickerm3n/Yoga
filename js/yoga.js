@@ -5,7 +5,7 @@
 }
 )()
 
-var position = 0  //-1065
+var position = 0  
 
 function sliderLeft() {
 	var sliderBox = document.querySelector('.slider-box');
@@ -18,9 +18,6 @@ function sliderLeft() {
 		sliderBox.style.left = position + 'px';
 	}
 
-
-	// sliderBox.style.left = position + 'px';
-	// (position > -2130 ? position += -1065 : position = 0)
 }
 
 function sliderRight() {
