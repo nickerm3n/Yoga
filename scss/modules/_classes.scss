@@ -33,6 +33,16 @@
 
 	&__decorator--pos-teach {
 		top: 0px;
+		
+		&:after {
+			@include pos($r:0);
+			content: '';
+			width: 2px;
+			height: 118px;
+			background: $mainText;
+			right: 21px;
+    		bottom: -90px;	
+		}
 	}
 
 	&__wrapper {
