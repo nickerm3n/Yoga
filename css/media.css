@@ -1,0 +1,12 @@
+@media screen and (max-width: 1680px) {
+	nav {
+		right: 10%;
+	}
+}
+
+@media screen and (max-width: 1470px) {
+	nav {
+		right: 3%;
+	}
+
+}

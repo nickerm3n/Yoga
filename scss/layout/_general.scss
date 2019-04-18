@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Alef:400,700|Nunito:300,400,700');
+// @import url('https://fonts.googleapis.com/css?family=Alef:400,700|Nunito:300,400,700');
 
-@include font-face('futura', '/fonts/futuhv-webfont');
+// @include font-face('futura', '/fonts/futuhv-webfont');
 
 * {
 	padding: 0;
@@ -59,13 +59,11 @@ body {
 
 	&__title {
 		font-size: 80px;
-		// font-size: 90px;
 		font-family: $futura;
 		line-height: 95px;
 		font-weight: 700;
 		text-transform: uppercase;
-		background-color: #565656;
-		// width: 930px;		
+		background-color: #565656;	
 		color: transparent;
 		text-shadow: 0px 1px 3px rgba(223,189,181,1);
 		-webkit-background-clip: text;
@@ -93,9 +91,12 @@ body {
 	}
 }
 
+.benefits--height {
+	height: 9em;
+}
+
 .benefits--mod {
 	width: 55%;
-	height: 9em;
 }
 
 .dectorator-container {
@@ -116,4 +117,8 @@ body {
 .benefits-wrapper {
 	display: flex;
 	justify-content: flex-end;
+}
+
+iframe {
+	display: block;
 }
