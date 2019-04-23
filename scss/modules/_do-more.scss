@@ -69,6 +69,11 @@
 			}
 		}
 
+		.email:invalid {
+			border-color: $red;
+			color: $red;
+		};
+
 		.checkbox-wrapper {
 			margin-top: 40px;
 			display: flex;

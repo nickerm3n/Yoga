@@ -2,7 +2,7 @@
 	document.getElementById('slider-left').onclick = sliderLeft;
 	document.getElementById('slider-right').onclick = sliderRight;
 	window.onscroll = showMenu;
-	document.getElementById('circle').addEventListener('click', test)
+	document.getElementById('circle').addEventListener('click', clickFunc)
 }
 )()
 
@@ -15,7 +15,7 @@ var position = 0,
 circle.classList.remove('circle');
 
 
-function test() {
+function clickFunc() {
 	circle.classList.remove('circle');
 	rollList(38)
 	navigation.style.visibility = 'visible';
@@ -27,7 +27,7 @@ function showMenu() {
 		circle.classList.add('circle');
 		rollList(-20)
 		navigation.style.visibility = 'hidden';
-		
+		circle.style.transform = 'scale(.5)'
 	}
 
 	if (window.scrollY < 500) {
