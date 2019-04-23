@@ -10,3 +10,8 @@
 	}
 
 }
+
+@media screen and (max-width: 1366px) {
+	nav {
+		right: 3%;
+	}
